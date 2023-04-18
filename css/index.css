@@ -1,0 +1,53 @@
+.unsereAngebot {
+    display: flex;
+    padding: 20px;
+    color: gold
+}
+
+.unsereAngebot div {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.unsereAngebot div:hover {
+    margin-top: -10px;
+    cursor: pointer;
+    box-shadow: 59px -30px 191px -38px rgba(133, 17, 17, 1) inset;
+    -webkit-box-shadow: 59px -30px 191px -38px rgba(133, 17, 17, 1) inset;
+    -moz-box-shadow: 59px -30px 191px -38px rgba(133, 17, 17, 1) inset;
+    transition: .5s
+}
+
+.vielSpass {
+    rotate: -5deg;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: sans-serif
+}
+
+.vielSpass p {
+    background: linear-gradient(90deg, rgba(69, 129, 15, .8733544443167892) 8%, rgba(139, 130, 15, .4447830157453606) 80%, rgba(0, 255, 95, .26271018661370793) 100%)
+}
+
+@media only screen and (max-width:600px) {
+    .unsereAngebot {
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .unsereAngebot div {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+        max-width: 300px;
+
+    }
+
+    .unsereAngebot div p {
+        font-size: 22px;
+    }
+}

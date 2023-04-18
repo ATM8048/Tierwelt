@@ -1,0 +1,58 @@
+.KontaktTabelle {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: -60px 18px 400px 74px rgba(14, 61, 13, 0.55);
+    -webkit-box-shadow: -60px 18px 400px 74px rgba(14, 61, 13, 0.55);
+    -moz-box-shadow: -60px 18px 400px 74px rgba(14, 61, 13, 0.55);
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+
+    /* Kontakt Page*/
+    .KontaktTabelle {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .KontaktTabelle img {
+        margin-bottom: 50px;
+    }
+
+    .Kontakt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Kontakt h1 {
+        font-size: 26px;
+    }
+}

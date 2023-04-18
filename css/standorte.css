@@ -1,0 +1,56 @@
+/* Grössere Bildschirme*/
+@media only screen and (min-width:600px) {
+    main .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            ". ."
+            ". .";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .main .container {
+        border: 2px solid rgba(255, 0, 0, 0.392);
+        font-size: 26px;
+    }
+
+    .main .container h2 {
+        margin: 0;
+        padding: 0;
+        color: rgba(255, 0, 0, 0.392);
+    }
+
+    iframe {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+/* Kleinere*/
+@media only screen and (max-width:600px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .main .container {
+        margin-bottom: 30px;
+        border: 2px solid rgba(255, 0, 0, 0.392);
+        width: 105%;
+        color: rgba(255, 0, 0, 0.392);
+    }
+
+    iframe {
+        height: 300px;
+        width: 100%;
+    }
+}

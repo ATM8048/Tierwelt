@@ -1,0 +1,104 @@
+/* Arten Page */
+.Arten {
+    display: flex;
+    justify-content: center;
+}
+
+.Arten ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Arten li {
+    margin: 0 10px;
+}
+
+.Arten a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.imgSclangen {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 20px 20px;
+}
+
+.imgSclangen img {
+    width: 100%;
+    height: 100%;
+}
+
+.Kornnatter,
+.BoaConstrictor,
+.Klapperschlange {
+    display: none;
+}
+
+#Art {
+    color: red;
+}
+
+@media only screen and (max-width:600px) {
+    .buttons {
+        font-size: 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: -40px;
+    }
+
+    .buttons button {
+        margin-left: 10px;
+    }
+
+    .allgemeinErkl p {
+        font-size: smaller;
+        line-height: 1.0;
+    }
+
+    .allgemeinErkl h2 {
+        font-size: 20px;
+    }
+
+    .textSclange {
+        font-size: smaller;
+        line-height: 1.0;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .buttons {
+        margin-top: 0;
+        padding-top: 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .buttons button {
+        background-color: transparent;
+        border: 1.5px solid #f2f5f7;
+        border-radius: 2em;
+        margin-left: 50px;
+        margin-top: -30px;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 5px 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .buttons .btn:hover {
+        color: #29292c;
+        background-color: #f2f5f7;
+        transition: all ease-in-out 350ms;
+    }
+}

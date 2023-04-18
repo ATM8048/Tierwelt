@@ -1,0 +1,6 @@
+Bei der script.js habe ich eine Fuktion für navbar Farbe changer
+Irgendwie funktionert aber mit manchmale Probleme
+
+Wie ich bei debugging gesehen habe manchmal zeigt undefined, können sie vielleicht eine Lösung finden.
+Natürlich wenn Sie zeit haben.
+Danke

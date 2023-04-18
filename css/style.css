@@ -1,0 +1,201 @@
+/*Allgemein CSS*/
+:root {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: .7s
+}
+
+body {
+    background: #45810f;
+    background: linear-gradient(90deg, rgba(69, 129, 15, .8733544443167892) 8%, rgba(139, 130, 15, .4447830157453606) 80%, rgba(0, 255, 95, .26271018661370793) 100%);
+    margin: 0;
+    padding: 0
+}
+
+.grassSection {
+    background-image: url('../img/grassImg.jpg');
+    text-align: center;
+    color: beige
+}
+
+header .grassSection {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    opacity: 0.6
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 0.4s ease
+}
+
+.navbar-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%
+}
+
+.nav-item {
+    width: 100%
+}
+
+.nav-item:last-child {
+    margin-top: auto
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(.4);
+    transition: var(--transition-speed)
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary)
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+    font-size: 36px
+}
+
+.nav-link img {
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+/*Media Q für kleinere Bildschirme*/
+@media only screen and (max-width:600px) {
+    .navbar {
+        position: relative;
+        bottom: 0;
+        width: 100vw;
+        height: 5rem
+    }
+
+    .navbar-ul {
+        flex-direction: row
+    }
+
+    .nav-link {
+        justify-content: center
+    }
+
+    .nav-link img {
+        width: 3rem;
+        min-width: 3rem;
+        margin: 0 0.5rem;
+    }
+
+    footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        z-index: -1
+    }
+
+}
+
+/* Media Q für grössere Bildschirme*/
+@media only screen and (min-width:600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh
+    }
+
+    .navbar:hover {
+        width: 16rem
+    }
+
+    .navbar:hover .link-text {
+        display: inline
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        z-index: -1
+    }
+
+}
+
+.dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418
+}
+
+.light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000;
+    --bg-primary: #fff;
+    --bg-secondary: #e4e4e4
+}
+
+.solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8
+}
+
+.theme-icon {
+    display: none
+}
+
+.dark #darkIcon {
+    display: block
+}
+
+.light #lightIcon {
+    display: block
+}
+
+main {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 15px auto;
+    padding: 80px;
+    line-height: 1.5;
+    text-align: center;
+    border: solid 3px #479446;
+    border-radius: 100px;
+    max-width: 800px;
+    box-shadow: 0 29px 157px 26px rgba(133, 17, 17, .68);
+    -webkit-box-shadow: 0 29px 157px 26px rgba(133, 17, 17, .68);
+    -moz-box-shadow: 0 29px 157px 26px rgba(133, 17, 17, .68)
+}
+
+main h1 {
+    rotate: -10deg;
+    color: rgba(255, 0, 0, 0.352);
+}
+
+footer .grassSection {
+    height: 50px;
+
+}
